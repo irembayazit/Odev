@@ -1,22 +1,20 @@
 package Entities;
 
-import java.util.Date;
-
 import Abstract.IEntity;
 
 //veri tabaný nesnesi oldugunu belirtmek için IEntity verilir
 public class Customer implements IEntity{
-		public int id;
-		public String firstName;
-		public String lastName;
-		public Date dateOfBirth;
-		public String nationalityId;
+		private int id;
+		private String firstName;
+		private String lastName;
+		private int dateOfBirth;
+		private String nationalityId;
 		
-		Customer(){
+		public Customer(){
 		
 		}
 		
-		public Customer(int id, String firstName, String lastName, Date dateOfBirth, String nationalityId) {
+		public Customer(int id, String firstName, String lastName, int dateOfBirth, String nationalityId) {
 			super();
 			this.id = id;
 			this.firstName = firstName;
@@ -44,10 +42,10 @@ public class Customer implements IEntity{
 		public void setLastName(String lastName) {
 			this.lastName = lastName;
 		}
-		public Date getDateOfBirth() {
+		public int getDateOfBirth() {
 			return dateOfBirth;
 		}
-		public void setDateOfBirth(Date dateOfBirth) {
+		public void setDateOfBirth(int dateOfBirth) {
 			this.dateOfBirth = dateOfBirth;
 		}
 		public String getNationalityId() {
