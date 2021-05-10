@@ -1,8 +1,8 @@
 package Main;
 
-import java.util.Date;
 
 import Abstract.BaseCustomerManager;
+import Adapters.MernisSerivceAdapter;
 import Concrete.CustomerCheckManager;
 import Concrete.CustomerManager;
 import Concrete.GameManager;
@@ -13,10 +13,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Customer customer = new Customer(1,"123456789","irem","bayazıt",new Date(2001),100);
+		Customer customer = new Customer(1,"12345679","irem","bayazıt",123,100);
 		Game game = new Game(1,"war",30);
 		
-		BaseCustomerManager customerManager = new CustomerManager(new CustomerCheckManager());
+		BaseCustomerManager customerManager = new CustomerManager(new MernisSerivceAdapter());
 		customerManager.Save(customer);
 		
 		GameManager gameManager = new GameManager();

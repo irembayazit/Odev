@@ -9,14 +9,14 @@ public class Customer implements IEntity{
 	private String nationalId;
 	private String firstName;
 	private String lastName;
-	private Date dateOfBirth;
+	private int dateOfBirth;
 	private double money;
 	
 	public Customer() {
 		
 	}
 	
-	public Customer(int id, String nationalId, String firstName, String lastName, Date dateOfBirth,double money) {
+	public Customer(int id, String nationalId, String firstName, String lastName, int dateOfBirth,double money) {
 		super();
 		this.id = id;
 		this.nationalId = nationalId;
@@ -58,11 +58,11 @@ public class Customer implements IEntity{
 		this.lastName = lastName;
 	}
 
-	public Date getDateOfBirth() {
+	public int getDateOfBirth() {
 		return dateOfBirth;
 	}
 
-	public void setDateOfBirth(Date dateOfBirth) {
+	public void setDateOfBirth(int dateOfBirth) {
 		this.dateOfBirth = dateOfBirth;
 	}
 
