@@ -19,8 +19,8 @@ public class StarbucksCustomerManager extends BaseCustomerManager{
 			super.Save(customer);
 		}
 		else {
-			System.out.println("Not a valid person");
+			System.out.println("Not a valid personnn");
 		}
-	}
+	} 
 	
 }

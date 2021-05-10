@@ -7,16 +7,16 @@ import Adapters.MernisSerivceAdapter;
 import Concrete.CustomerCheckManager;
 import Entities.Customer;
 
-public class Main {
+public class Main { 
 
 	public static void main(String[] args) {
 		
 		Customer customer = new Customer();
 		customer.setId(2);
-		customer.setDateOfBirth(2001);
-		customer.setFirstName("irem");
-		customer.setLastName("bayazýt");
-		customer.setLastName("12345679");
+		customer.setDateOfBirth(1234);
+		customer.setFirstName("Ýrem");
+		customer.setLastName("Bayazýt");
+		customer.setNationalityId("12345679");
 		
 		
 		BaseCustomerManager customerManager = new StarbucksCustomerManager(new MernisSerivceAdapter());

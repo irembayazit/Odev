@@ -20,8 +20,8 @@ public class MernisSerivceAdapter implements ICustomerCheckService {
 		}
 		catch (Exception e) {
 			System.out.println("Not a valid person");
-		}
-		
+		} 
+		System.out.println(result);
 		return result;
 	}
 	
