@@ -25,4 +25,4 @@ public class MernisSerivceAdapter implements ICustomerCheckService {
 		return result;
 	}
 	
-}
+} 
